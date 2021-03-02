@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: human_net_production
-  username: human_net
-  password: <%= ENV['HUMAN_NET_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
