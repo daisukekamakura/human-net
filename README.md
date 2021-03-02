@@ -8,7 +8,7 @@
 |encrypted_password|string|null: false|
 ### Association
 - has_many :students
-## itemsテーブル
+## studentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
