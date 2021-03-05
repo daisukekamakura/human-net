@@ -3,6 +3,5 @@ class GroupsController < ApplicationController
     @student = Student.all
   end
   def show
-    # @student = Student.find(params[:id])
   end
 end

@@ -1,3 +1,6 @@
 = @student.name
 = @student.memo
 = link_to "トップページ", root_path, class: "Btn__join"
+= link_to "編集", edit_student_path, class: "Btn__join"
+= link_to @student, method: :delete ,class: "Buy-btn__delete" do
+  削除

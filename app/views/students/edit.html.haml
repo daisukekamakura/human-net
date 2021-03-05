@@ -1,0 +1,5 @@
+= form_with model:@student, local: true do |f|
+  = f.text_field :name, placeholder: "名前", maxlength: "50", class: "Item-new__form"
+  = f.text_area :memo, placeholder: "メモ", maxlength: "1000", class: "Item-new__form"
+  = f.submit "更新する", class: 'exhibit'
+= link_to "戻る" ,student_path,class: 'exhibit'
