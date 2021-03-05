@@ -1,0 +1,5 @@
+= form_with model:@student, local: true do |f|
+  = f.text_field :name, placeholder: "ニックネーム", maxlength: "40", class: "st-name"
+  = f.text_field :memo, placeholder: "メモ", maxlength: "200", class: "st-memo"
+  = f.submit "登録する", class: 'create-btn'
+= link_to "トップページ", root_path, class: "Btn__join"

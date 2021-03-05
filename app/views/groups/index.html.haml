@@ -1,2 +1,14 @@
+.Btn
+  - if user_signed_in?
+    = button_to "ログアウト", destroy_user_session_path, method: :delete, class: "Btn__log"
+    = link_to "マイページ", "#", class: "Btn__join"
+  - else
+    = link_to "ログイン", new_user_session_path, class: "Btn__log"
+    = link_to "新規会員登録", new_user_registration_path, class: "Btn__join"
+= link_to new_student_path do
+  生徒登録
 %div toppage
 %h1 デプロイのエラーにはまりこれだけしかできてません
+- @student.each do |student|
+  = link_to student_path(student.id) do
+    = student.name
